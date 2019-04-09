@@ -65,7 +65,7 @@ public class MockitoPresenterTests {
         verifyNoMoreInteractions(view);
     }
 
-    /** Жём по кнопке "+" и увеличивается значение в поле кол-во*/
+    /** Жём по кнопке "-" и уменьшается значение в поле кол-во*/
     @Test
     public void testDecreasePresenter(){
         presenter.decrementCoffeeCount();

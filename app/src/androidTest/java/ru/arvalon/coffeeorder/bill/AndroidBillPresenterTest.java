@@ -35,7 +35,6 @@ public class AndroidBillPresenterTest {
 
         Context ctx = InstrumentationRegistry.getContext();
 
-
         Realm.init(ctx);
 
         presenter = BillPresenterImpl.getInstance();

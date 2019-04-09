@@ -25,7 +25,7 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 
 /**
- * Запуск кода не хост-машине на HotSpot'е а на устройстве на Dalvik/ART
+ * Запуск кода не на хост-машине на HotSpot'е а на устройстве на Dalvik/ART
  * Created by arvalon on 25.03.2018.
  */
 

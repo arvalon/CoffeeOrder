@@ -8,8 +8,8 @@ android {
         applicationId "ru.arvalon.coffeeorder"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -54,15 +54,15 @@ configurations.all { config ->
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     //implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
     // General testing
     testImplementation 'junit:junit:4.12'
 
     // https://github.com/robolectric/robolectric/issues/3839
-    testImplementation 'androidx.test:runner:1.1.0'
-    testImplementation 'androidx.test:rules:1.1.0'
+    testImplementation 'androidx.test:runner:1.2.0'
+    testImplementation 'androidx.test:rules:1.2.0'
 
     // Mockito
     testImplementation 'org.mockito:mockito-core:2.17.0'
@@ -72,13 +72,13 @@ dependencies {
     testImplementation 'org.robolectric:robolectric:3.8'
 
     // Espresso
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // Отслеживание утечек памяти
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 
     // Stetho chrome://inspect
-    debugImplementation 'com.facebook.stetho:stetho:1.5.0'
+    debugImplementation 'com.facebook.stetho:stetho:1.5.1'
     debugImplementation 'com.uphyca:stetho_realm:2.2.2'
 }

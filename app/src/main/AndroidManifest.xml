@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".system.App">
+
         <activity android:name=".mainpage.impl.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".bill.impl.BillActivity"></activity>
+
+        <activity android:name=".bill.impl.BillActivity"/>
+
     </application>
 
 </manifest>

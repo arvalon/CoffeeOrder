@@ -3,11 +3,11 @@ apply plugin: 'realm-android'
 
 android {
 
-    compileSdkVersion 28
+    compileSdkVersion 30
     defaultConfig {
         applicationId "ru.arvalon.coffeeorder"
         minSdkVersion 23
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 2
         versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -36,9 +36,6 @@ android {
         //maven { url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo' }
         maven { url 'https://github.com/WickeDev/stetho-realm/raw/master/maven-repo' }
     }
-
-    buildToolsVersion '28.0.3'
-
 }
 
 configurations.all { config ->
@@ -54,25 +51,25 @@ configurations.all { config ->
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     //implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
     // General testing
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
 
     // https://github.com/robolectric/robolectric/issues/3839
-    testImplementation 'androidx.test:runner:1.2.0'
-    testImplementation 'androidx.test:rules:1.2.0'
+    testImplementation 'androidx.test:runner:1.3.0'
+    testImplementation 'androidx.test:rules:1.3.0'
 
     // Mockito
     testImplementation 'org.mockito:mockito-core:2.17.0'
     androidTestImplementation 'org.mockito:mockito-android:2.17.0'
 
     // Robolectric
-    testImplementation 'org.robolectric:robolectric:3.8'
+    testImplementation 'org.robolectric:robolectric:4.2.1'
 
     // Espresso
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // Отслеживание утечек памяти
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'

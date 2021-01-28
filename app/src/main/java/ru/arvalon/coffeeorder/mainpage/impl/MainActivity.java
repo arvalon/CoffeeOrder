@@ -17,7 +17,7 @@ import ru.arvalon.coffeeorder.mainpage.interfaces.IMainPagePresenter;
 public class MainActivity extends AppCompatActivity
         implements View.OnClickListener, CoffeeOrderView {
 
-    static final String TAG = "vga";
+    static final String TAG = "coffee.log";
 
     private final static String COFFEE_COUNT = "coffee_count";
 

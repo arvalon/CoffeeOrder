@@ -1,5 +1,6 @@
 package ru.arvalon.coffeeorder.mainpage.impl;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity
         log(getClass().getSimpleName()+" onResume");
     }
 
+    // даже не понимаю как это вообще работало если работало
     @Override
     public void onClick(View view) {
         switch (view.getId()) {

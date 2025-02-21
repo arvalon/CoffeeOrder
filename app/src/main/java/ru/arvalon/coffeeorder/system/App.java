@@ -3,7 +3,7 @@ package ru.arvalon.coffeeorder.system;
 import android.app.Application;
 import android.util.Log;
 
-import com.squareup.leakcanary.LeakCanary;
+//import com.squareup.leakcanary.LeakCanary;
 
 import io.realm.Realm;
 import ru.arvalon.coffeeorder.mainpage.impl.MainActivity;
